@@ -1,0 +1,35 @@
+.er1, .er2, .er3, .er4, .er5, .er6, .er7{
+  position: absolute;
+  opacity: 0;
+}
+
+.er1{
+  top: 3px;
+  left: 105px;
+}
+.er2{
+  top: 92px;
+  left: 28px;
+}
+.er3{
+  top: 233px;
+  left: 28px;
+}
+.er4{
+  top: 184px;
+  left: 112px;
+}
+.er5{
+  top: 101px;
+  left: 230.5px;
+}
+.er6{
+  top: 252px;
+  left: 216px;
+  transform: translate(-50%,-50%);
+}
+.er7{
+  top: 275px;
+  left: 329px;
+  transform: translate(-50%,-50%);
+}

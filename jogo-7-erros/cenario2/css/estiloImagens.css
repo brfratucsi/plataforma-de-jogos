@@ -1,0 +1,33 @@
+.er1, .er2, .er3, .er4, .er5, .er6, .er7{
+  opacity:0;
+  position: absolute;
+  transition: all 1s;
+}
+.er1{
+  top: calc(80px - calc(39px/2));
+  left: calc(120px - calc(39px/2));
+}
+.er2{
+  top: calc(155px - calc(39px/2));
+  left: calc(116px - calc(39px/2));
+}
+.er3{
+  top: calc(5px - calc(39px/2));
+  left: calc(220px - calc(39px/2));
+}
+.er4{
+  top: calc(85px - calc(39px/2));
+  left: calc(185px - calc(39px/2));
+}
+.er5{
+  top: calc(190px - calc(39px/2));
+  left: calc(336px - calc(39px/2));
+}
+.er6{
+  top: calc(140px - calc(39px/2));
+  left: calc(178px - calc(39px/2));
+}
+.er7{
+  top: calc(262px - calc(39px/2));
+  left: calc(122px - calc(39px/2));
+}

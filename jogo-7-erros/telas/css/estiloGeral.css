@@ -1,0 +1,131 @@
+body{
+  background: gray;
+}
+.container{
+  position: relative;
+  height: 100vh;
+}
+.jogo{
+  width: 360px;
+  height: 640px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imagem1, .imagem2{
+  position: relative;
+}
+#img1, #img2{
+  width: 100%;
+}
+.erro{
+  position: absolute;
+}
+.marcaDeErro{
+  opacity: 1;
+}
+.interface{
+  padding: 12.5px 15px;
+  box-sizing: border-box;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contaAcertos{
+  display: flex;
+  justify-content: space-between;
+  width: 181px;
+}
+.int--er{
+  width: 19px;
+  height: 19px;
+  border: solid 2px #FF9900;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.atribuicao{
+  width: 68px;
+  font-size: 9px;
+  font-family: 'Open Sans', sans-serif;
+}
+.atribuicao a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FF9900;
+}
+.telaVit{
+  position: absolute;
+  top: -640px;
+  width: 100%;
+  height: calc(100% - 44px);
+  /* display: none; */
+  opacity: 0;
+  transition: all 1s;
+}
+.bgTelaVit{
+  background: #000000;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+}
+.bannerVit, .bannerVit h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bannerVit h1{
+  font-family: 'Rum Raisin', sans-serif;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  transform: rotate(-6.5deg) translate(-50%, -100%);
+}
+/* Index */
+.tituloJogo{
+  text-align: center;
+  margin: 30px;
+  position: relative;
+}
+.tituloJogo h1{
+  position: absolute;
+  top: 50px;
+  font-family: 'Rum Raisin', sans-serif;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  transform: rotate(-6.5deg);
+}
+.colunas{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.thumb{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 10px;
+}
+.thumb img{
+  height: 100%;
+}
+
+input {
+  width: 200px;
+  height: 50px;
+  background-color: #e2aa00;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    width: 100%;
+  }
+}

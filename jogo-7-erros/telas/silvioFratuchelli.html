@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rum+Raisin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estiloGeral.css">
+    <link rel="stylesheet" href="css/estiloImagens.css">
+    <!-- CARREGAR SCRIPTS "jogo.js" e "sons.js" -->
+    <script src="scripts/jogo.js"  charset="utf-8"></script>
+    <script src="scripts/sons.js" charset="utf-8"></script>
+    <title>7 Erros</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jogo">
+        <div class="imagem1">
+          <!-- CARREGAR AQUI A IMAGEM 1 E ATRIBUIR ID "img1" E INTERAÇÃO POR CLIQUE "tocarSomErro()"-->
+          <img src="imagens/figura1.png" id="img1" onclick="tocarSomErro()">
+          <!-- CARREGAR AQUI A ERRO 1 E ATRIBUIR A CLASSE "er1" E INTERAÇÃO POR CLIQUE "marcarErro('er1')" -->
+          <img class="er1" src="midias/erro.png" onclick="marcarErro('er1')">
+          <img class="er2" src="midias/erro.png" onclick="marcarErro('er2')">
+          <img class="er3" src="midias/erro.png" onclick="marcarErro('er3')">
+          <img class="er4" src="midias/erro.png" onclick="marcarErro('er4')">
+          <img class="er5" src="midias/erro.png" onclick="marcarErro('er5')">
+          <img class="er6" src="midias/erro.png" onclick="marcarErro('er6')">
+          <img class="er7" src="midias/erro.png" onclick="marcarErro('er7')">
+          <!-- REPETIR O PASSO ACIMA DE 1 A 7 -->
+        </div>
+        <div class="imagem2">
+          <div class="imagem1">
+          <!-- CARREGAR AQUI A IMAGEM 2 E ATRIBUIR ID "img1" E INTERAÇÃO POR CLIQUE "tocarSomErro()"-->
+          <img src="imagens/figura2.png" id="img2" onclick="tocarSomErro()">
+          <!-- CARREGAR AQUI A ERRO 1 E ATRIBUIR A CLASSE "er1" E INTERAÇÃO POR CLIQUE "marcarErro('er1')" -->
+          <img class="er1" src="midias/erro.png" onclick="marcarErro('er1')">
+          <img class="er2" src="midias/erro.png" onclick="marcarErro('er2')">
+          <img class="er3" src="midias/erro.png" onclick="marcarErro('er3')">
+          <img class="er4" src="midias/erro.png" onclick="marcarErro('er4')">
+          <img class="er5" src="midias/erro.png" onclick="marcarErro('er5')">
+          <img class="er6" src="midias/erro.png" onclick="marcarErro('er6')">
+          <img class="er7" src="midias/erro.png" onclick="marcarErro('er7')">
+          <!-- REPETIR O PASSO ACIMA DE 1 A 7 -->
+          </div>
+        </div>
+        <div class="interface">
+          <a href="../index.html"> <img src="midias/home.png"> </a>
+          <div class="contaAcertos">
+            <!-- CRIAR 7 DIVS VAZIAS COM CLASSE "int--er" -->
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+          </div>
+          <div class="atribuicao">
+            <a href="#">Tela criada por <strong>Silvio Fratuchelli</strong></a>
+          </div>
+        </div>
+        <div class="telaVit" id="telaVit">
+          <div class="bgTelaVit"></div>
+          <div class="bannerVit">
+            <img src="midias/bannerVit.png" alt="">
+            <h1>Mandou Bem!!</h1>
+          </div>
+        </div>
+        <!-- CARREGAR AUDIO COM ID "erroSom" -->
+         <audio id="somErro">
+          <source src="midias/erro.ogg" type="audio/ogg">
+          <source src="midias/erro.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- CARREGAR AUDIO COM ID "acertoSom" -->
+        <audio id="somAcerto">
+          <source src="midias/acerto.mp3" type="audio/mpeg">
+          <source src="midias/acerto.ogg" type="audio/ogg">
+        </audio>
+        <!-- CARREGAR AUDIO COM ID "bgSom" -->
+        <audio src="midias/bg.mp3" autoplay loop>
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>

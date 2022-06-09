@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rum+Raisin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estiloGeral.css">
+    <link rel="stylesheet" href="css/estiloImagens.css">
+    <script src="scripts/jogo.js" charset="utf-8"></script>
+    <script src="scripts/sons.js" charset="utf-8"></script>
+    <title>7 Erros</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jogo">
+        <div class="imagem1">
+          <img src="midias/telasNicolas/figura1.png" alt="" id="img1" onclick="tocarSomErro()">
+          <img src="midias/erro.png" alt="" class="er1" onclick="marcarErro('er1')">
+          <img src="midias/erro.png" alt="" class="er2" onclick="marcarErro('er2')">
+          <img src="midias/erro.png" alt="" class="er3" onclick="marcarErro('er3')">
+          <img src="midias/erro.png" alt="" class="er4" onclick="marcarErro('er4')">
+          <img src="midias/erro.png" alt="" class="er5" onclick="marcarErro('er5')">
+          <img src="midias/erro.png" alt="" class="er6" onclick="marcarErro('er6')">
+          <img src="midias/erro.png" alt="" class="er7" onclick="marcarErro('er7')">
+          <!-- CARREGAR AQUI A IMAGEM 1 E ATRIBUIR ID "img1" E INTERAÇÃO POR CLIQUE "tocarSomErro()"-->
+          <!-- CARREGAR AQUI A ERRO 1 E ATRIBUIR A CLASSE "er1" E INTERAÇÃO POR CLIQUE "marcarErro('er1')" -->
+          <!-- REPETIR O PASSO ACIMA DE 1 A 7 -->
+        </div>
+        <div class="imagem2">
+          <img src="midias/telasNicolas/figura2.png" alt="" id="img2" onclick="tocarSomErro()">
+          <img src="midias/erro.png" alt="" class="er1" onclick="marcarErro('er1')">
+          <img src="midias/erro.png" alt="" class="er2" onclick="marcarErro('er2')">
+          <img src="midias/erro.png" alt="" class="er3" onclick="marcarErro('er3')">
+          <img src="midias/erro.png" alt="" class="er4" onclick="marcarErro('er4')">
+          <img src="midias/erro.png" alt="" class="er5" onclick="marcarErro('er5')">
+          <img src="midias/erro.png" alt="" class="er6" onclick="marcarErro('er6')">
+          <img src="midias/erro.png" alt="" class="er7" onclick="marcarErro('er7')">
+          <!-- CARREGAR AQUI A IMAGEM 2 E ATRIBUIR ID "img2" E INTERAÇÃO POR CLIQUE "tocarSomErro()"-->
+          <!-- CARREGAR AQUI A ERRO 1 E ATRIBUIR A CLASSE "er1" E INTERAÇÃO POR CLIQUE "marcarErro('er1')" -->
+          <!-- REPETIR O PASSO ACIMA DE 1 A 7 -->
+        </div>
+        <div class="interface">
+          <a href="../index.html"> <img src="midias/home.png" alt=""> </a>
+          <div class="contaAcertos">
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <div class="int--er"></div>
+            <!-- CRIAR 7 DIVS VAZIAS COM CLASSE "int--er" -->
+          </div>
+          <div class="atribuicao">
+            <a href="#">Tela criada por <strong>Nicolas Chinaglia</strong></a>
+          </div>
+        </div>
+        <div class="telaVit" id="telaVit">
+          <div class="bgTelaVit"></div>
+          <div class="bannerVit">
+            <img src="midias/bannerVit.png" alt="">
+            <h1>Mandou Bem!!</h1>
+          </div>
+        </div>
+        <audio id="erroSom">
+          <source src="midias/erro.ogg" type="audio/ogg">
+          <source src="midias/erro.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="acertoSom">
+          <source src="midias/acerto.ogg" type="audio/ogg">
+          <source src="midias/acerto.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="bgSom" autoplay loop>
+          <source src="midias/bg.ogg" type="audio/ogg">
+          <source src="midias/bg.mp3" type="audio/mpeg">
+        </audio>
+        <!-- CARREGAR AUDIO COM ID "erroSom" -->
+        <!-- CARREGAR AUDIO COM ID "acertoSom" -->
+        <!-- CARREGAR AUDIO COM ID "bgSom" -->
+      </div>
+    </div>
+  </body>
+</html>
